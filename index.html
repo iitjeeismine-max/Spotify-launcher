@@ -5,11 +5,16 @@
   <title>Spotify</title>
   <link rel="manifest" href="manifest.json">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    window.location.replace("https://open.spotify.com/");
-  </script>
+  <style>
+    body { background:#191414; color:#1DB954; font-family:sans-serif; text-align:center; padding-top:40vh; }
+  </style>
 </head>
 <body>
-  Redirecting to Spotify...
+  <p>Tap Install now, then this page will open Spotify.</p>
+  <script>
+    setTimeout(function() {
+      window.location.replace("https://open.spotify.com/");
+    }, 8000);
+  </script>
 </body>
 </html>
